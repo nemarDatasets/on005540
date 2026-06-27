@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "dataset_id": "on005540",
-  "source": "openneuro",
-  "source_id": "ds005540",
+  "pipeline_stage": "enriched",
   "title": "EmoEEG-MC: A Multi-Context Emotional EEG Dataset for Cross-Context Emotion Decoding",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Xin XU": {},
     "Xinke SHEN": {},
@@ -12,42 +12,139 @@
     "Sitian WANG": {},
     "Yihan LI": {},
     "Zongsheng LI": {},
-    "Dan ZHANG": {},
+    "Dan ZHANG": {
+      "orcid": "0000-0002-7592-3200"
+    },
     "Mingming ZHANG": {},
     "Quanying LIU": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds005540.v1.0.7",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on005540",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on005540",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1038/s41597-023-02650-w",
+      "identifier_type": "DOI",
+      "relation_type": "References"
+    },
+    {
+      "identifier": "10.1073/pnas.1321664111",
+      "identifier_type": "DOI",
+      "relation_type": "References"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.6.0",
-  "recording_modality": [
-    "beh",
-    "eeg"
-  ],
-  "datatypes": [
-    "beh",
-    "eeg"
   ],
   "funding_references": [
     {
-      "funder_name": "the National Key R&D Program of China (2021YFF1200804)"
-    },
-    {
-      "funder_name": "Shenzhen Excellent Youth Project (RCYX20231211090405003)"
-    },
-    {
-      "funder_name": "Shenzhen Science and Technology Innovation Committee (RCBS20231211090748082, KJZD20230923115221044, 2022410129, KCXFZ20201221173400001)"
-    },
-    {
       "funder_name": "SUSTech Undergraduate Innovation and Entrepreneurship Training Program(2024S07)"
+    },
+    {
+      "funder_name": "National Key R&D Program of China",
+      "award_number": "2021YFF1200804"
+    },
+    {
+      "funder_name": "Shenzhen Excellent Youth Project",
+      "award_number": "RCYX20231211090405003"
+    },
+    {
+      "funder_name": "Shenzhen Science and Technology Innovation Committee",
+      "award_number": "RCBS20231211090748082"
+    },
+    {
+      "funder_name": "Shenzhen Science and Technology Innovation Committee",
+      "award_number": "KJZD20230923115221044"
+    },
+    {
+      "funder_name": "Shenzhen Science and Technology Innovation Committee",
+      "award_number": "2022410129"
+    },
+    {
+      "funder_name": "Shenzhen Science and Technology Innovation Committee",
+      "award_number": "KCXFZ20201221173400001"
     }
   ],
-  "acknowledgements": "We would like to thank Dr. Xin Hu for providing the video materials of the FACED dataset. This work was supported by the National Key R\\&D Program of China (2021YFF1200804), Shenzhen Excellent Youth Project (RCYX20231211090405003), Shenzhen Science and Technology Innovation Committee (RCBS20231211090748082, KJZD20230923115221044, 2022410129,  KCXFZ20201221173400001)."
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "beh",
+    "eeg"
+  ],
+  "resource_type_specific": "Neuroimaging Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".4593",
+    ".csv",
+    ".edf",
+    ".gz",
+    ".ipynb",
+    ".json",
+    ".mat",
+    ".md",
+    ".npy",
+    ".pth",
+    ".py",
+    ".pyc",
+    ".tsv",
+    ".txt",
+    ".xlsx"
+  ],
+  "description": "EmoEEG-MC is a multi-context emotional EEG dataset comprising 64-channel EEG and peripheral physiological recordings from 60 participants exposed to video-induced and imagery-induced emotional stimuli across seven emotion categories (joy, inspiration, tenderness, fear, disgust, sadness, and neutral). This dataset addresses the critical gap in cross-context emotion decoding by enabling investigation of neural mechanisms underlying emotional processing across different elicitation contexts, with demonstrated cross-context classification accuracies of 66.7% for binary emotion classification and 28.9% for seven-category emotion recognition.",
+  "methods_description": "EEG data were collected from 60 participants using 64-channel EEG systems along with peripheral physiological measurements (PPG and GSR) for a subset of participants. Participants were exposed to two distinct emotional induction contexts: video-induced emotions and imagery-induced emotions, each comprising 21 trials across seven emotion categories. Emotional experiences were validated through subjective reports. Cross-context emotion decoding was performed using Support Vector Machines with L1 regularization.",
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "emotion recognition"
+    },
+    {
+      "term": "cross-context emotion decoding"
+    },
+    {
+      "term": "affective computing"
+    },
+    {
+      "term": "electroencephalography"
+    },
+    {
+      "term": "emotional processing"
+    },
+    {
+      "term": "physiological signals"
+    },
+    {
+      "term": "video-induced emotion"
+    },
+    {
+      "term": "imagery-induced emotion"
+    },
+    {
+      "term": "cross-context generalization"
+    },
+    {
+      "term": "PPG"
+    },
+    {
+      "term": "GSR"
+    },
+    {
+      "term": "multimodal emotion recognition"
+    },
+    {
+      "term": "emotion elicitation contexts"
+    }
+  ],
+  "source_hash": "6aaec32fdfce03109107af3c672e3a6de33b94bfa6e032138d3589a385c351e3"
 }
