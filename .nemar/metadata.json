@@ -1,7 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "EmoEEG-MC: A Multi-Context Emotional EEG Dataset for Cross-Context Emotion Decoding",
+  "description": "EmoEEG-MC is a multi-context emotional EEG dataset comprising 64-channel EEG and peripheral physiological recordings from 60 participants exposed to video-induced and imagery-induced emotional stimuli across seven emotion categories (joy, inspiration, tenderness, fear, disgust, sadness, and neutral). This dataset addresses the critical gap in cross-context emotion decoding by enabling investigation of neural mechanisms underlying emotional processing across different elicitation contexts, with demonstrated cross-context classification accuracies of 66.7% for binary emotion classification and 28.9% for seven-category emotion classification using machine learning approaches.",
+  "methods_description": "EEG data were collected from 60 participants using 64-channel EEG systems along with peripheral physiological measurements (PPG and GSR) for a subset of participants. Participants were exposed to two distinct emotional induction contexts: video-based stimuli and mental imagery tasks. Each context included 21 trials spanning seven emotional categories (joy, inspiration, tenderness, fear, disgust, sadness, and neutral). Emotional experiences were validated through subjective self-report measures.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -18,12 +20,30 @@
     "Mingming ZHANG": {},
     "Quanying LIU": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds005540.v1.0.7",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "EEG"
     },
+    {
+      "term": "emotion recognition"
+    },
+    {
+      "term": "cross-context emotion decoding"
+    },
+    {
+      "term": "affective computing"
+    },
+    {
+      "term": "electroencephalography"
+    },
+    {
+      "term": "emotional states"
+    },
+    {
+      "term": "machine learning classification"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on005540",
       "identifier_type": "URL",
@@ -43,6 +63,11 @@
       "identifier": "10.1073/pnas.1321664111",
       "identifier_type": "DOI",
       "relation_type": "References"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds005540.v1.0.7",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -67,21 +92,17 @@
     },
     {
       "funder_name": "Shenzhen Science and Technology Innovation Committee",
-      "award_number": "2022410129"
-    },
-    {
-      "funder_name": "Shenzhen Science and Technology Innovation Committee",
       "award_number": "KCXFZ20201221173400001"
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "Neuroimaging Dataset",
   "modalities": [
     "beh",
     "eeg"
   ],
-  "resource_type_specific": "Neuroimaging Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "75.6 GB (1077 files)"
   ],
   "formats": [
     ".4593",
@@ -98,53 +119,8 @@
     ".pyc",
     ".tsv",
     ".txt",
-    ".xlsx"
+    ".xlsx",
+    ".yml"
   ],
-  "description": "EmoEEG-MC is a multi-context emotional EEG dataset comprising 64-channel EEG and peripheral physiological recordings from 60 participants exposed to video-induced and imagery-induced emotional stimuli across seven emotion categories (joy, inspiration, tenderness, fear, disgust, sadness, and neutral). This dataset addresses the critical gap in cross-context emotion decoding by enabling investigation of neural mechanisms underlying emotional processing across different elicitation contexts, with demonstrated cross-context classification accuracies of 66.7% for binary emotion classification and 28.9% for seven-category emotion recognition.",
-  "methods_description": "EEG data were collected from 60 participants using 64-channel EEG systems along with peripheral physiological measurements (PPG and GSR) for a subset of participants. Participants were exposed to two distinct emotional induction contexts: video-induced emotions and imagery-induced emotions, each comprising 21 trials across seven emotion categories. Emotional experiences were validated through subjective reports. Cross-context emotion decoding was performed using Support Vector Machines with L1 regularization.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "emotion recognition"
-    },
-    {
-      "term": "cross-context emotion decoding"
-    },
-    {
-      "term": "affective computing"
-    },
-    {
-      "term": "electroencephalography"
-    },
-    {
-      "term": "emotional processing"
-    },
-    {
-      "term": "physiological signals"
-    },
-    {
-      "term": "video-induced emotion"
-    },
-    {
-      "term": "imagery-induced emotion"
-    },
-    {
-      "term": "cross-context generalization"
-    },
-    {
-      "term": "PPG"
-    },
-    {
-      "term": "GSR"
-    },
-    {
-      "term": "multimodal emotion recognition"
-    },
-    {
-      "term": "emotion elicitation contexts"
-    }
-  ],
-  "source_hash": "6aaec32fdfce03109107af3c672e3a6de33b94bfa6e032138d3589a385c351e3"
+  "source_hash": "af17f4085375b44bf367ae2633f9f5a1175a4e55dfbfe862c99bc8a75f4d7cc2"
 }
