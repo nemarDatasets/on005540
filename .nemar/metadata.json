@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "EmoEEG-MC: A Multi-Context Emotional EEG Dataset for Cross-Context Emotion Decoding",
-  "description": "EmoEEG-MC is a multi-context emotional EEG dataset comprising 64-channel EEG and peripheral physiological recordings from 60 participants exposed to video-induced and imagery-induced emotional stimuli across seven emotion categories (joy, inspiration, tenderness, fear, disgust, sadness, and neutral). This dataset addresses the critical gap in cross-context emotion decoding by enabling investigation of how emotional neural responses generalize across different elicitation contexts, with demonstrated classification accuracies of 66.7% for binary emotion classification and 28.9% for seven-category emotion classification using machine learning approaches.",
-  "methods_description": "EEG data were collected from 60 participants using 64-channel EEG systems along with peripheral physiological measurements (PPG and GSR) for a subset of participants. Participants were exposed to two distinct emotional induction contexts: video-based stimuli and mental imagery tasks. Each context included 21 trials spanning seven emotional categories (joy, inspiration, tenderness, fear, disgust, sadness, and neutral). Emotional experiences were validated through subjective self-report measures.",
+  "description": "EmoEEG-MC is a multi-context emotional EEG dataset comprising 64-channel EEG and peripheral physiological recordings (PPG, GSR) from 60 participants exposed to video-induced and imagery-induced emotional stimuli. Seven emotion categories (joy, inspiration, tenderness, fear, disgust, sadness, neutral) were evoked and validated through subjective reports, enabling investigation of cross-context emotion decoding. The dataset supports research on neural mechanisms of emotion and generalization of affective computing models across contexts.",
+  "methods_description": "EEG (64-channel) and peripheral physiological data (PPG, GSR) were recorded from 60 participants during two experimental contexts: video-induced and imagery-induced emotion elicitation, covering seven emotion categories. Subjective reports were used to validate the emotional experience for each category. Some participants have incomplete trial sets due to missing imagery or video trials.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -25,22 +25,21 @@
       "term": "EEG"
     },
     {
-      "term": "emotion recognition"
-    },
-    {
-      "term": "cross-context emotion decoding"
+      "term": "Emotions",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004644"
     },
     {
       "term": "affective computing"
     },
     {
-      "term": "electroencephalography"
+      "term": "emotion decoding"
     },
     {
-      "term": "emotional states"
+      "term": "cross-context generalization"
     },
     {
-      "term": "machine learning classification"
+      "term": "peripheral physiological signals"
     }
   ],
   "related_identifiers": [
@@ -72,9 +71,6 @@
   ],
   "funding_references": [
     {
-      "funder_name": "SUSTech Undergraduate Innovation and Entrepreneurship Training Program(2024S07)"
-    },
-    {
       "funder_name": "National Key R&D Program of China",
       "award_number": "2021YFF1200804"
     },
@@ -84,15 +80,11 @@
     },
     {
       "funder_name": "Shenzhen Science and Technology Innovation Committee",
-      "award_number": "RCBS20231211090748082"
+      "award_number": "RCBS20231211090748082, KJZD20230923115221044, 2022410129, KCXFZ20201221173400001"
     },
     {
-      "funder_name": "Shenzhen Science and Technology Innovation Committee",
-      "award_number": "KJZD20230923115221044"
-    },
-    {
-      "funder_name": "Shenzhen Science and Technology Innovation Committee",
-      "award_number": "KCXFZ20201221173400001"
+      "funder_name": "SUSTech Undergraduate Innovation and Entrepreneurship Training Program",
+      "award_number": "2024S07"
     }
   ],
   "resource_type_general": "Dataset",
